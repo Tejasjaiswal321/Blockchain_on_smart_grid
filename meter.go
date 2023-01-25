@@ -146,7 +146,7 @@ func (s *SmartContract) AddMeter(ctx contractapi.TransactionContextInterface, id
 		return err
 
 	}
-
+	// fmt.println("message")
 
 
 	return ctx.GetStub().PutState(id, meterJSON)
